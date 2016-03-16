@@ -6,26 +6,31 @@
         <title>Meu formulário</title>
     </header>
     <body>
-        <h1>Meu formulário</h1>
-        <form action = "http://labs.edysegura.com/requests/"
-              method="post">
-            <label>nome</label>
-            <input type="text" name="nome">
-            <label>Sobrenome</label>
-            <input type = "text" name="Sobrenome">
-           <label>Disciplina</label>
-            <select name="disciplina">
-                <option value="tp5">Técnicas de Programação 5</option>
-                <option value="es3">Engenharia de software 3</option>
-            </select>
-             <input type="submit" name="Enviar">
-        </form>
-        
-        <h1>Busca no G1</h1>
-        <form action = "http://g1.globo.com/busca" method="get">
-            <label>Buscar</label>
-            <input type="text" name="q">
-            <input type="submit" name="Buscar">
-        </form>
+        <div id ="edyform">
+            <h1>Meu formulário</h1>
+            <form 
+                  action = "http://labs.edysegura.com/requests/"
+                  method="post">
+                <label>nome</label>
+                <input class="formfield" type="text" name="nome">
+                <label>Sobrenome</label>
+                <input class="formfield" type = "text" name="Sobrenome">
+               <label>Disciplina</label>
+                <select class="formfield" name="disciplina">
+                    <option value="tp5">Técnicas de Programação 5</option>
+                    <option value="es3">Engenharia de software 3</option>
+                </select>
+                 <input type="submit" name="Enviar">
+            </form>
+        </div>
+        <div id = "g1form">
+            <h1>Busca no G1</h1>
+            <form 
+                  action = "http://g1.globo.com/busca" method="get">
+                <label>Buscar</label>
+                <input type="text" name="q">
+                <input type="submit" name="Buscar">
+            </form>
+        </div>
     </body>
 </html>
